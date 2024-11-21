@@ -1,0 +1,93 @@
+/**{
+    color: palevioletred;
+}
+    */
+    h1{
+        color:paleturquoise;
+    }
+    .verde{
+        background-color: black;
+        color:aqua;
+    }
+    h6.verde{
+        background-color:plum;
+    }
+    #sections {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(24,24%, 96%);
+    }
+    [type="text"] {
+        border: 2px solid pink  ;
+    }
+    input[type]{
+        background-color: rgb(227, 172, 255);
+    }
+    input[type="text"]:focus{
+        background-color: rgb(183, 85, 134);
+    }
+    p::first-line {
+        font-family: monospace;
+    }
+    div[class~="azul"] {
+        color: blue !important;
+    }
+    html[ lang |="es"] {
+       font-family: "Arial", sans-serif; 
+    }
+    a[href^="https://"] {
+        color:blueviolet
+    }
+    img[src$=".png"]{
+        border: 1px solid red;
+    }
+    [title*="plan"]{
+        color:rgb(236, 63, 0)
+    }
+    a:hover{
+        color: deeppink;
+    }
+    button:active{
+        background-color: rgb(176, 255, 101);
+    }
+    input :focus{
+        background-color: darkseagreen;
+    }
+    input :checked{
+        color: rgb(225, 122, 246);
+    }
+    button :disabled{
+        color: dodgerblue;
+    }
+    #parrafos p:first-child{
+        background-color: brown;
+    }
+    #parrafos p:last-child{
+        background-color: rgb(255, 97, 97);
+    }
+    #parrafos p:nth-child(3){
+        font-weight: bold;
+    }
+    #parrafos p:nth-of-type(even),
+    #parrafos h2:nth-of-type(even){
+        text-decoration:  underline;
+    }
+    #parrfos p:nth-child(even)::first-letter{
+        font-size: 24px;
+    }
+    blockquote::before{
+        content: "Cita:";
+        font-weight: bold;
+    }
+    blockquote::after{
+        content:"🍌";
+        border: 1px solid palevioletred;
+    }
+    ul li::marker{
+        content: "😻";
+    }
+    ul li ul li::marker{
+        content: "🥰";
+    }
+    ul li ul li ul li::marker{
+        content:"💝";
+    }

@@ -1,0 +1,36 @@
+/*estilos.css */
+h1{
+    font-family: "Comic sans MS", "Comic Sans", sans-serif;
+    color:tomato;
+    color: rebeccapurple;
+}
+hr{
+
+    font-family: monospace;
+    background-color: #0074e8;
+    height: 5px;
+}
+
+h2{
+    font-family: "Arial", "sans-serif";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h3{
+    color: #0074e8;
+    background-color: #0c9;
+    border: 1px solid #f0f;
+    box-shadow: 2px 2px 5px #ff0;
+    text-shadow: 1px 1px 2px #f33;
+}
+
+h4{
+    color: red;
+    background-color: #ff9428;
+    border-color: rgb(15, 80, 250);
+    box-shadow: 2px 2px 5px rgba(204, 2, 204, 0.5);
+    text-shadow: 1px 1px 2px rgba(4, 204, 24, 0.5);
+}
