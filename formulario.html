@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        body {
+           font-family: Arial, sans-serif;
+           background-color: #984fc6;
+           }
+           H1 {
+               color: #79a4cf;
+           }
+           p  {
+              font-size: 16px;
+           }
+       </style>
+</head>
+<a href="index.html">🏠</a>
+<a href="curriculum vitae.html">⬅️</a>
+<a href="estilos.html">➡️</a>
+<body>
+    <h1>FORMULARIOS</h1>
+    <h2>Formulario con post</h2>
+    <form method="POST" action="procesa.php">
+        <!--Componentes del formulario-->
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="apellido paterno" placeholder="Apellido paterno" required />
+        <input type="text" name="apellido materno" placeholder="Apellido materno" required />
+    </form>
+    <h2>Formulario con get</h2>
+    <form method="GET" action="procesa.php">
+        <!--Componentes del formulario-->
+        <input type="text" name="nombre" placeholder="Nombre" required />
+        <input type="text" name="apellido paterno" placeholder="Apellido paterno" required />
+        <input type="text" name="apellido materno" placeholder="Apellido materno" required />
+
+    </form>
+   
+        <h2>Formulario con get</h2>
+        <form method="GET" action="procesa.php">
+            <!--Componentes del formulario-->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
+            <input type="text" name="nombre"  />
+            <input type="password" name="clave" />
+            <input type="file" name="archivo"/>
+            <input type="checkbox" name="acepto" />
+            <input type="radio" name="sexo" value="M" />
+            <input type="hidden" name="folio"/>
+            <br>
+            <input type="email" name="correo"/>
+            <br>
+            <input type="url" name="url"/>
+            <br>
+            <input type="number" name="numero"/>
+            <br>
+            <input type="range" name="rango"/>
+            <br>
+            <input type="date" name="fecha"/>
+            <br>
+            <input type="month" name="mes"/>
+            <br>
+            <input type="week" name="semana"/>
+            <br>
+            <input type="time" name="tiempo"/>
+            <br>
+            <input type="datetime-local" name="fecha y hora local"/>
+            <br>
+            <input type="color" name="color"/>
+            <br>
+            <input type="search" name="busqueda"/>
+            <br>
+            <input type="tel" name="telefono"/>
+            <br>
+            <textarea name="comentario" rows="4" cols="50">
+            Escribe tu texto aqui...
+            </textarea>
+        </form>
+<form method="POST" action="/procesa">
+    <p>
+        <label form="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" />
+    </p>
+   <div>
+    <label form="masculino">
+    <input type="radio" id="masculino" name="genero" value="M" checked />
+    masculino
+   </label>
+   </div>
+   <div>
+    <label form="femenino">
+    <input type="radio" id="femenino" name="genero" value="F" checked />
+    femenino
+   </label>
+   </div>
+</form>
+<form action="" method="GET" >
+    <select name="pais">
+        <option value="MX" selected>Mexico </option>    
+        <option value="US" selected>Estados Unidos</option>  
+        <option value="CA" selected>Canada</option>     
+    </select>
+    <br>
+    <br>
+    <select name="colores" multiple size="2">
+        <option value="rojo" selected>Rojo </option>    
+        <option value="verde" selected>Verde</option>  
+        <option value="azul" selected>Azul</option>     
+    </select>
+    <br>
+    <br>
+    <div>
+   <label for="colores">Colores</label>
+   <select name="colores" id="colores">
+   <optgroup label="colores primarios">
+    <option value="rojo" selected>Rojo </option>    
+    <option value="verde" selected>Verde</option>  
+    <option value="azul" selected>Azul</option>  
+   </optgroup>
+   <optgroup label="colores secundarios">
+    <option value="amarillo" selected>amarillo</option>    
+    <option value="naranja" selected>naranja</option>  
+    <option value="violeta" selected>violeta</option>  
+   </optgroup>
+   </select>
+   <fieldset >  <!---Si se coloca disable hara que los campos se inhabiliten-->
+    <legend>Datos personales</legend>
+    <label for="nombre">Nombre:</label>
+    <br>
+    <input type="text" id="nombre" name="nombre" />
+    <br>
+    <label for="apellido">Apellido:</label>
+    <br>
+    <input type="text" id="apellido" name="apellido" />
+    <br>
+   </fieldset>
+    </div>
+    <button type="button">Cancelar</button>
+    <button type="reset">Limpiar</button>
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon</title>
+    <script src="Js/pokemon.js" defer></script>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-color: #ffe156; /* Amarillo brillante */
+            color: #2d3436; /* Texto oscuro para buen contraste */
+        }
+        h1 {
+            color: #ff165d; /* Rosa fuerte */
+        }
+        p {
+            color: #6a4c93; /* Violeta claro */
+        }
+        button {
+            background-color: #ff165d; /* Rosa */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff77a9; /* Rosa suave al pasar el ratón */
+        }
+    </style>
+    <a href="index.html">🏠</a>
+    <a href="objetos2.html">⬅️</a>
+    <a href="api.html">➡️</a>
+</head>
+<body>
+<main class="container">
+    <form id="search-form">
+        <center>
+        <h1>POKÉDEX</h1>
+        <label for="pokemon-name-input">Busca un Pokémon:</label>
+        <input type="text" id="pokemon-name-input" placeholder="Ejemplo: Pikachu" required>
+        <button type="submit">Buscar</button>
+    </form>
+    <article>
+        <dl>
+            <dt>Nombre</dt>
+            <dd id="pokemon-name"></dd>
+            <dt>Tipos</dt>
+            <dd id="pokemon-types"></dd>
+            <dd id="pokemon-additional-info"></dd>
+            <dt>Imagen</dt>
+            <dd>
+                <img border="4" id="pokemon-image" src="" alt="Imagen del Pokémon">
+            </dd>
+        </dl>
+        <h2>Sound:</h2>
+        <div class="audio-container">
+            <audio controls id="audio-pokemon"></audio> <!-- El src se actualizará con JS -->
+        </div>
+    </article>
+    </center>
+</main>
+</body>
+</html>
